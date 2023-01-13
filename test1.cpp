@@ -1,4 +1,3 @@
-// 输出杨辉三角前10行10列
 #include <stdio.h>
 #include <stdlib.h>
 void swap(int *x, int *y)
