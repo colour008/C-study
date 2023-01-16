@@ -1,3 +1,4 @@
+/*应用结构体指针，找到年龄最大值对应的对象*/
 #include <stdio.h>
 #include <stdlib.h>
 
