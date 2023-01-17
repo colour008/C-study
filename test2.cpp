@@ -1,28 +1,38 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-struct Stu
-{
-    char name[20];
-    int age;
-} stu[3] = {"张三", 16, "李四", 18, "王麻子", 15};
-
+#include <string.h>
 int main()
 {
-    struct Stu *p = stu;
-    struct Stu *q = NULL;
-    int i;
-    int maxAge = 0;
-    for (i = 0; i < 3; i++)
+    char s1[520], s2[520];
+    int a[520], b[520];
+    scanf("%s%s", s1, s2);
+    int len1 = 0;
+    len1 = strlen(s1) > strlen(s2) ? strlen(s1) - strlen(s2) : strlen(s2) - strlen(s1);
+    if (strlen(s1) > strlen(s2))
     {
-        if (p->age > maxAge)
-        {
-            maxAge = p->age;
-            q = p;
-        }
-        p++;
+        s2 += '0' * len1;
     }
-    printf("姓名：%s, 年龄:%d\n", q->name, q->age);
+
+    int i, j = 0;
+
+    int len = 0;
+    len = strlen(s1) > strlen(s2) ? strlen(s1) : strlen(s2);
+    for (i = 0; i < len; i++)
+    {
+        a[i] = s1[i] - '0';
+        b[i] = s2[i] - '0';
+    }
+    for (i = 0; i < len; i++)
+    {
+        printf("%d", a[i]);
+    }
+    printf("\n");
+    for (i = 0; i < len; i++)
+    {
+        printf("%d", b[i]);
+    }
+
+    printf("\nlen=%d\n", len);
     system("pause");
     return 0;
 }
