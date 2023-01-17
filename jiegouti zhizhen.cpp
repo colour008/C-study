@@ -1,7 +1,16 @@
-/*应用结构体指针，找到年龄最大值对应的对象*/
+/***
+ * @Author: colour008 70709807+colour008@users.noreply.github.com
+ * @Date: 2023-01-16 14:44:31
+ * @LastEditors: colour008 70709807+colour008@users.noreply.github.com
+ * @LastEditTime: 2023-01-17 12:06:57
+ * @FilePath: \C-study\jiegouti zhizhen.cpp
+ * @Description: 应用结构体指针找出3人中年龄最大的那个人
+ * @Version:1.0.0
+ * @Copyright (c) 2023 by colour008 70709807+colour008@users.noreply.github.com, All Rights Reserved.
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
-
 struct Stu
 {
     char name[20];

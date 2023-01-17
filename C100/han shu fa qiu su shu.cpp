@@ -1,7 +1,21 @@
-/*调用函数法求素数*/
+/***
+ * @Author: colour008 70709807+colour008@users.noreply.github.com
+ * @Date: 2023-01-13 11:30:12
+ * @LastEditors: colour008 70709807+colour008@users.noreply.github.com
+ * @LastEditTime: 2023-01-17 09:44:13
+ * @FilePath: \C-study\C100\han shu fa qiu su shu.cpp
+ * @Description: 函数调用法求素数
+ * @version: 1.0.0
+ * @Copyright (c) 2023 by colour008 70709807+colour008@users.noreply.github.com, All Rights Reserved.
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+/***
+ * @description:
+ * @param {int} m
+ * @return {m or 0}
+ */
 int f(int m)
 {
 	int i, y;
@@ -38,7 +52,7 @@ int main()
 	{
 		if (f(i))
 		{
-			l++;    //统计输出的数字个数
+			l++; // 统计输出的数字个数
 			printf("%d\t", i);
 			if (l % 10 == 0)
 			{
