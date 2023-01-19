@@ -1,0 +1,28 @@
+{
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": [
+					"variable.other.property.cpp",
+					"variable.other.object",
+					"meta.bracket.square.access",
+					"meta.body.struct.cpp",
+					"meta.block.struct.cpp",
+					"source.cpp"
+				],
+				"settings": { "foreground": "#fffd9e" }
+			},
+			{
+				"scope": [
+					"variable.other.global.cpp",
+					"variable.other.object",
+					"meta.bracket.square.access",
+					"meta.body.struct.cpp",
+					"meta.block.struct.cpp",
+					"source.cpp"
+				],
+				"settings": { "foreground": "#ff6d59" }
+			}
+		]
+	}
+}
