@@ -1,32 +1,32 @@
-/*** 
- * @Author: colour008 70709807+colour008@users.noreply.github.com
- * @Date: 2023-01-13 11:30:12
- * @LastEditors: colour008 70709807+colour008@users.noreply.github.com
- * @LastEditTime: 2023-01-20 11:33:54
- * @FilePath: \C-study\test1.cpp
- * @Description: 
- * @Version: 
- * @Copyright (c) 2023 by colour008 70709807+colour008@users.noreply.github.com, All Rights Reserved. 
- */
 #include <stdio.h>
 #include <stdlib.h>
-int main() 
+
+int *twoSum(int *nums, int numsSize, int target)
 {
-	int i=0;
-	
-	for ( i = 10; i < 100; i++)
+	int i, j;
+	int *result = NULL;
+	for (i = 0; i < numsSize - 1; i++)
 	{
-		int a = 809 * i;
-		int b = 8 * i;
-		int c = 800 * i;
-		int d = 9 * i;
-		if (a>=1000&&a<10000&&b<100&&d>=100&&(a==c+d))
+		for (j = i + 1; j < numsSize; j++)
 		{
-			printf("%d ", i);
+			if (nums[i] + nums[j] == target)
+			{
+				result = (int *)malloc(sizeof(int) * 2);
+				result[0] = i;
+				result[1] = j;
+				return result;
+			}
 		}
-		
 	}
-	
+	return result;
+}
+
+int main()
+{
+	int num[4] = {1, 3, 5, 9};
+	int target = 8;
+	int *result = twoSum(num, 4, target);
+	printf("%d %d\n", *result, *(result + 1));
 	system("pause");
 	return 0;
 }
