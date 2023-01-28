@@ -2,12 +2,13 @@
  * @Author: colour008 70709807+colour008@users.noreply.github.com
  * @Date: 2023-01-13 11:30:12
  * @LastEditors: colour008 70709807+colour008@users.noreply.github.com
- * @LastEditTime: 2023-01-20 14:44:54
+ * @LastEditTime: 2023-01-27 08:53:28
  * @FilePath: \C-study\C100\di gui qiu jie cheng.cpp
- * @Description: 递归方法求从0（1）~n的阶乘和
- * @Version:v0.1
+ * @Description: 递归方法求从1~n的阶乘和
+ * @Version:
  * @Copyright (c) 2023 by colour008 70709807+colour008@users.noreply.github.com, All Rights Reserved.
  */
+
 #include <stdio.h>
 #include <stdlib.h>
 long double fun1(int m)
