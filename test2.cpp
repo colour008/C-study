@@ -2,12 +2,13 @@
  * @Author: colour008 70709807+colour008@users.noreply.github.com
  * @Date: 2023-01-13 11:30:12
  * @LastEditors: colour008 70709807+colour008@users.noreply.github.com
- * @LastEditTime: 2023-01-28 12:32:49
+ * @LastEditTime: 2023-01-29 11:25:04
  * @FilePath: \C-study\test2.cpp
  * @Description:
  * @Version:
  * @Copyright (c) 2023 by colour008 70709807+colour008@users.noreply.github.com, All Rights Reserved.
  */
+
 #include <stdio.h>
 #include <stdlib.h>
 
